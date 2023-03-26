@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="calculator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insulation & Blow</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("GraphPap.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Indie Flower', cursive;
+      }
+
+      /* Set the dimensions of the map window */
+      #map-window {
+        width: 400px;
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+      }
+    
+      /* Set the dimensions and position of the map inside the window */
+      #map-window iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      /* Set the font to Arial Black for the heading */
+      h1 {
+        font-family: "Arial Black", Arial, sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #7F00FF; /* neon mixture of blue and violet */
+        text-transform: uppercase;
+        text-shadow: 1px 1px #1d1f2a, 
+                     1px -1px #1d1f2a, 
+                     -1px 1px #1d1f2a, 
+                     -1px -1px #1d1f2a,
+                     2px 2px #1d1f2a, 
+                     2px -2px #1d1f2a, 
+                     -2px 2px #1d1f2a, 
+                     -2px -2px #1d1f2a; /* Thick dark blue outline */
+      }
+      
+      /* Set the font to Indie Flower for the subheading */
+      h2 {
+        font-family: "Indie Flower", cursive;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: black;
+      }
+    
+      /* Set the font size, line height, font family, and font weight for the paragraph */
+      p {
+        font-size: 1.3em;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px;
+        font-weight: bold;
+      }
+    
+      /* Set the font to Indie Flower for "The Best Option" text */
+      .best-option {
+        font-family: "Indie Flower", cursive;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+      
+      /* Calculator container */
+      .calculator-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .calculator {
+        width: 300px;
+        margin: center;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: #f5f5f5;
+        box-shadow: 0px 0px 10px #ccc;
+        font-family: 'Courier New', Courier, monospace;
+}
+      /* Input fields */
+      .calculator input {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 13px; /* updated font size */
+        text-align: right;
+      }
+    
+      /* Buttons */
+      .calculator button {
+        display: inline-block;
+        width: 23%;
+        padding: 10px;
+        margin: 1%;
+        border: none;
+        border-radius: 4px;
+        background-color: #1d1d20;
+        color: white;
+        font-size: 14px; /* Updated font size */
+        cursor: pointer;
+        box-shadow: 0px 0px 5px #888;
+      }
+    
+      /* Result area */
+      .calculator #result {
+        display: block;
+        padding: 5px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 18px;
+        text-align: right;
+        background-color: #fff;
+      }
+      
+    </style>
+    
+    <style>
+      .text {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+
+      body {
+        background-image: url("GraphPap.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Indie Flower', cursive;
+      }
+    
+      /* Set the dimensions of the map window */
+      #map-window {
+        width: 400px;
+        height: 300px;
+        position: relative;
+        margin: 0 auto;
+      }
+    
+      /* Set the dimensions and position of the map inside the window */
+      #map-window iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      /* Set the font to Arial Black for the heading */
+      h1 {
+        font-family: "Arial Black", Arial, sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #ff005dd8; /* neon mixture of blue and violet */
+        text-transform: uppercase;
+        text-shadow: 1px 1px #1d1f2a, 
+                     1px -1px #1d1f2a, 
+                     -1px 1px #1d1f2a, 
+                     -1px -1px #1d1f2a,
+                     2px 2px #1d1f2a, 
+                     2px -2px #1d1f2a, 
+                     -2px 2px #1d1f2a, 
+                     -2px -2px #1d1f2a; /* Thick dark blue outline */
+      }
+      
+      /* Set the font to Indie Flower for the subheading */
+      h2 {
+        font-family: "Indie Flower", cursive;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: black;
+      }
+    
+      /* Set the font size, line height, font family, and font weight for the paragraph */
+      p {
+        font-size: 1.3em;
+        line-height: 1.5;
+        text-align: center;
+        margin: 20px;
+        font-weight: bold;
+      }
+    
+      /* Set the font to Indie Flower for "The Best Option" text */
+      .best-option {
+        font-family: "Indie Flower", cursive;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+    </style>    
+  </head>
+  <body>
+    <h1>INSULATION & BLOW</h1>
+    <h2 style="margin-top: 0;">The Best Option</h2>
+    <div id="map-window">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.05185579293!2d-95.73096457021401!3d29.81736467355862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C+TX%2C+USA!5e0!3m2!1sen!2sin!4v1553280465496" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div style="position: absolute; top: 10px; right: 10px; font-weight: bold; font-size: 1.5em;">We serve this area.</div>
+      <div style="position: absolute; bottom: -0px; right: -33px; font-weight: bold; font-size: 1.5em;">1#</div>
+    </div>  
+    <div style="margin-top: 20px;">
+      <p>Welcome To Our Website!</p>
+      <p>Use The Calculator:</p>
+      <div class="calculator-container">
+        <div class="calculator" style="margin-right: 10px;">
+          <!-- calculator elements -->
+          <input type="text" id="area" placeholder="Enter the area to be insulated (in square feet)">
+          <input type="text" id="thickness" placeholder="Enter the desired thickness of insulation (in inches)">
+          <button onclick="calculateInsulationCost()">Calc</button>
+          <button onclick="clearFields()">Clear</button>
+          <br>
+          <span id="result">Estimate</span>
+        </div>
+        <div class="text" style="font-weight: bold; font-size: 1.3em;">2#</div>
+      </div>            
+    </div>
+  </body>    
+</html>
