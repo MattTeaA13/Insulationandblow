@@ -1,0 +1,100 @@
+/* Set the font to Arial Black for the heading */
+h1 {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ff005dd8; /* neon mixture of blue and violet */
+  text-transform: uppercase;
+  text-shadow: 1px 1px #1d1f2a, 
+               1px -1px #1d1f2a, 
+               -1px 1px #1d1f2a, 
+               -1px -1px #1d1f2a,
+               2px 2px #1d1f2a, 
+               2px -2px #1d1f2a, 
+               -2px 2px #1d1f2a, 
+               -2px -2px #1d1f2a; /* Thick dark blue outline */
+}
+
+/* Set the font to Indie Flower for the subheading */
+h2 {
+  font-family: "Indie Flower", cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Set the font size, line height, font family, and font weight for the paragraph */
+p {
+  font-size: 1.3em;
+  line-height: 1.5;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
+
+/* Set the font to Indie Flower for "The Best Option" text */
+.best-option {
+  font-family: "Indie Flower", cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* Set the font family and size for the calculator label */
+#calculator-label {
+  font-family: none, sans-serif;
+  font-size: 1.2em;
+}
+
+/* Set the font size, line height, and font family for the calculator */
+#calculator {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+/* ...existing styles... */
+
+/* ...existing styles... */
+
+body {
+  background-image: url("GraphPap.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 375px) { /* iPhone mini width */
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin: 10px;
+  }
+  
+  .best-option {
+    font-size: 1.5em;
+    font-family: "Indie Flower", cursive;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+}
