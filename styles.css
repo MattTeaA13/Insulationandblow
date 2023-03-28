@@ -5,11 +5,9 @@ h1 {
     line-height: 1;
     margin: 1;
     color: #1b55eb;
-    text-shadow: 2px 2px 2px #000000, 2px 2px 2px #000000, 2px 2px 2px #000000, 2px 2px 2px #000000;
 }
 
 body {
     background-image: url("GraphPap.jpg");
     background-size: cover;
   }
-  
