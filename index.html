@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Insulation & Blow</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<h1>Insulation & Blow</h1>
+	</header>
+	
+	<nav>
+		<a>832-335-1661 - Under Construction</a>
+	</nav>
+	
+	<section>
+		<h2 id="home" style="font-size: 19px;">Welcome to Insulation & Blow</h2>
+		<p>We are a company specializing in insulation installation and blowing services. Our team of experts is here to help you with all your insulation needs.</p>
+		<div id="map-container">
+		  <img id="map-image" src="map.jpg" alt="Map Image" style="border:30;">
+		  <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443087.54862317536!2d-95.68149441579149!3d29.8174782175602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1680057895553!5m2!1sen!2sus" width="270" height="270" style="border:10;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<button id="toggle-map-btn" onclick="toggleMap()">Show Map Instead</button>
+	  </section>
+	  
+	  <script>
+		function toggleMap() {
+		  var mapContainer = document.getElementById("map-container");
+		  var mapImage = document.getElementById("map-image");
+		  var googleMap = document.getElementById("google-map");
+		  var toggleMapBtn = document.getElementById("toggle-map-btn");
+		  
+		  if (mapImage.style.display === "none") {
+			mapImage.style.display = "block";
+			googleMap.style.display = "none";
+			toggleMapBtn.textContent = "Show Map Instead";
+		  } else {
+			mapImage.style.display = "none";
+			googleMap.style.display = "block";
+			toggleMapBtn.textContent = "Show Image Instead";
+		  }
+		}
+	  </script>
+	<section style="margin-bottom: 60px;">
+		<h2 id="services">Our Services</h2>
+		<ul>
+			<li>Attic insulation installation</li>
+			<li>Crawl space insulation installation</li>
+			<li>Wall insulation installation</li>
+			<li>Blowing insulation services</li>
+			<li>And more!</li>
+		</ul>
+	</section>
+	<footer>
+		<p>&copy; 2023 Insulation & Blow. All rights reserved.</p>
+	</footer>
+</body>
+</html>
