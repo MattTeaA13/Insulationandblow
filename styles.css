@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+/* Change background color to blue when viewed on iPhone or iPad */
+@supports (-webkit-touch-callout:none) {
+    body {
+        background-color: #cd10bd;
+    }
+}
+
 header {
     background-color: rgb(75, 0, 203);
     color: white;
