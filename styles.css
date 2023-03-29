@@ -27,7 +27,7 @@ header {
 }
 
 section {
-    background-image: url('GraphPap.jpg');
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
