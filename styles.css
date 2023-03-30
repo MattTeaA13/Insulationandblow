@@ -1,106 +1,33 @@
-body {
-    background-color: grey;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+h1 {
+  text-align: center;
+  font-size: 31px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(224, 30, 76);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.276);
+  z-index: 9999;
+  letter-spacing: -1.2px;
+  color: #fff;
+  margin-top: 0;
+  line-height: 80px; /* Center the text vertically */
 }
 
-/* Change background color to blue when viewed on iPhone or iPad */
-@supports (-webkit-touch-callout:none) {
-    body {
-        background-color: #cd10bd;
-    }
+h2 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
 
-header {
-    background-color: rgb(75, 0, 203);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}   
-
-/* Change background color to blue when viewed on iPhone or iPad */
-@supports (-webkit-touch-callout:none) {
-    header {
-        background-color: #cd10bd;
-    }
+.Hello {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
 }
 
-section {
-    background-image: url('GraphPap.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-}
-
-nav {
-    background-color: #333;
-    overflow: hidden;
-}
-
-nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-section {
-    padding: 20px;
-    margin: 0;
-    clear: both;
-}
-
-#map-container {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-#map-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  #google-map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-  
-  #toggle-map-btn {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #262626;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-footer {
-    background-color: #1b1b1b;
-    color: white;
-    padding: 2px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 15px;
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
 }
