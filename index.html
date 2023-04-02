@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Add this line -->
-        <title>Insulation &amp; Blow</title>
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <script src="script.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Insulation &amp; Blow</title>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <script src="script.js"></script>
     </head>
   <body>
     <header>
@@ -141,6 +141,27 @@
           </div>
           <button id="replaceMapWithImage" onclick="replaceMapWithImage()">Replace Map</button>          
           </section>
+          <style>
+            @media only screen and (min-width: 768px) {
+              .gallery-item img {
+                width: 30%;
+              }
+            }
+            </style>
+            <section id="gallery">
+              <h2>Gallery</h2>
+              <div class="gallery-container" style="margin-top: 20px; display: flex; justify-content: space-between;">
+                <div class="gallery-item">
+                  <img src="img1.jpg" alt="Image 1" style="object-fit: cover;">
+                </div>
+                <div class="gallery-item" style="margin-right: 10px;">
+                  <img src="img2.jpg" alt="Image 2" style="object-fit: cover;">
+                </div>
+                <div class="gallery-item">
+                  <img src="img3.jpg" alt="Image 3" style="width: 35%; object-fit: cover;">
+                </div>
+              </div>
+            </section>                                                               
           <section id="tips">
         <h2>Insulation Tips</h2>
     <ul>
